@@ -84,8 +84,8 @@
 </head>
 
 <body>
-<div id="apDiv2"><img src="./Fondo.jpg" width="1200" height="700" alt="Fondo" longdesc="https://album.es/fotos/uploads/imagenes/thumbs/fondo-escolar-hofmann-para-album-classic-lapices-de-colores_escolares-2-classic_1200px.jpg" /></div>
-<div id="apDiv3"><img src="./Icono_usuario.png" width="290" height="290" alt="Ico_Usu" longdesc="https://cdn.icon-icons.com/icons2/1154/PNG/512/1486564400-account_81513.png" /></div>
+<div id="apDiv2"><img src="{{ url_for('static', filename='Fondo.jpg') }}" width="1200" height="700" alt="Fondo" longdesc="https://album.es/fotos/uploads/imagenes/thumbs/fondo-escolar-hofmann-para-album-classic-lapices-de-colores_escolares-2-classic_1200px.jpg" /></div>
+<div id="apDiv3"><img src="{{ url_for('static', filename='Icono_usuario.png') }}" width="290" height="290" alt="Ico_Usu" longdesc="https://cdn.icon-icons.com/icons2/1154/PNG/512/1486564400-account_81513.png" /></div>
 <div id="apDiv4">
   <div align="center">
     <h1>PLATAFORMA ESTUDIANTIL </h1>
@@ -95,7 +95,7 @@
   <h2 align="center">UNIDAD EDUCATIVA PARTICULAR </h2>
   <h2 align="center">&ldquo;MARQUÉS DE SELVA ALEGRE&rdquo;</h2>
 </div>
-<div id="apDiv7"><img src="./Login.jpg" width="437" height="247" alt="Login" longdesc="Login.jpg" /></div>
-<div id="apDiv8"><img src="./B.png" width="170" height="46" alt="B" longdesc="B.png" /></div>
+<div id="apDiv7"><img src="{{ url_for('static', filename='Login.jpg') }}" width="437" height="247" alt="Login" longdesc="Login.jpg" /></div>
+<div id="apDiv8"><img src="{{ url_for('static', filename='B.png') }}" width="170" height="46" alt="B" longdesc="B.png" /></div>
 </body>
 </html>
