@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<h1>Servidor Web para el Sistema Escolastico con Flask</h1><h2>Grupo # 3 - Ing Software 1</h2>"
+    return render_template('./html_1.0/ABP.html')
