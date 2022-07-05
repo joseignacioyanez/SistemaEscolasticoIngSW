@@ -1,3 +1,5 @@
+# Funciones para los hashes de contraseñas
+
 import bcrypt
 
 def hashearContrasena(contrasena):

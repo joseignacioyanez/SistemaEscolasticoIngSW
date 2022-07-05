@@ -1,3 +1,5 @@
+# Generar BD primera vez, usa schema.sql
+
 import sqlite3
 # funcion para hacer hash de mismo directorio
 from hashBcrypt import hashearContrasena
