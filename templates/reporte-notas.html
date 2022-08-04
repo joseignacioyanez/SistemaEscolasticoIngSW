@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Reporte de Notas</title>
+<style type="text/css">
+body,td,th {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36px;
+	color: #000;
+	font-weight: bold;
+}
+body {
+	background-image: url();
+	background-repeat: repeat;
+	background-color: #FFC;
+}
+</style>
+</head>
+
+<body>
+<table width="1024" border="1" align="center">
+  <tr>
+    <td width="298" height="99" align="center"><img src="{{ url_for('static',filename='img/icono.png') }}" width="192" height="184"  />  </td>
+    <td height="99" colspan="2" align="center" valign="middle"><h3><strong>Unidad Educativa Particular &quot;Marqués de Selva Alegre&quot;</strong>     </h3><label for="textfield6"></label>      </td>
+  </tr>
+  <tr>
+    <td height="96" colspan="2" align="center" valign="top"><a href="/" target="_self"><img src="{{ url_for('static',filename='img/flecha-izquierda.png') }}" width="100" height="90" /></a></td>
+    <td width="709" rowspan="2" align="center"><table width="500" border="1">
+      <tr>
+        <td colspan="7" align="center" valign="middle">Reporte de Notas</td>
+        </tr>
+      <tr>
+        <td>Estudiante</td>
+        <td colspan="6"><form id="form1" name="form1" onSubmit="search();return false;" action="">
+          <label for="textfield"></label>
+          <input name="textfield" type="text" id="textfield" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td>Nivel </td>
+        <td colspan="6"><form id="form2" name="form2" onSubmit="search();return false;" action="">
+          <label for="textfield2"></label>
+          <input name="textfield2" type="text" id="textfield2" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td>Paralelo</td>
+        <td colspan="6"><form id="form3" name="form3" onSubmit="search();return false;" action="">
+          <label for="textfield3"></label>
+          <input name="textfield3" type="text" id="textfield3" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td colspan="7" align="center" valign="middle">Asignaturas</td>
+        </tr>
+      <tr>
+        <td>Lenguaje</td>
+        <td>Matemáticas</td>
+        <td>Estudios Sociales</td>
+        <td>Ciencias Naturales </td>
+        <td>Ingles</td>
+        <td>Cultura Física</td>
+        <td>Manualidades</td>
+      </tr>
+      <tr>
+        <td><form id="form4" name="form4" onSubmit="search();return false;" action="">
+          <label for="textfield4"></label>
+          <input name="textfield4" type="text" id="textfield4" size="30" />
+        </form></td>
+        <td><form id="form5" name="form5" onSubmit="search();return false;" action="">
+          <label for="textfield5"></label>
+          <input name="textfield5" type="text" id="textfield5" size="30" />
+        </form></td>
+        <td><form id="form6" name="form6" onSubmit="search();return false;" action="">
+          <label for="textfield2"></label>
+          <input name="textfield6" type="text" id="textfield2" size="30" />
+        </form></td>
+        <td><form id="form7" name="form7" onSubmit="search();return false;" action="">
+          <label for="textfield3"></label>
+          <input name="textfield7" type="text" id="textfield3" size="30" />
+        </form></td>
+        <td><form id="form8" name="form8" onSubmit="search();return false;" action="">
+          <label for="textfield4"></label>
+          <input name="textfield8" type="text" id="textfield4" size="30" />
+        </form></td>
+        <td><form id="form9" name="form9" onSubmit="search();return false;" action="">
+          <label for="textfield5"></label>
+          <input name="textfield9" type="text" id="textfield5" size="30" />
+        </form></td>
+        <td><form id="form10" name="form10" onSubmit="search();return false;" action="">
+          <label for="textfield7"></label>
+          <input name="textfield10" type="text" id="textfield7" size="30" />
+        </form></td>
+      </tr>
+      <tr>
+        <td height="64" align="center" valign="top"><select name="select2" id="select2">
+          <option>Aprobado</option>
+          <option>Reprobado</option>
+          <option>Sin Selección</option>
+        </select></td>
+        <td align="center" valign="top"><select name="select3" id="select3">
+          <option>Aprobado</option>
+          <option>Reprobado</option>
+          <option>Sin Selección</option>
+        </select></td>
+        <td align="center" valign="top"><select name="select4" id="select4">
+          <option>Aprobado</option>
+          <option>Reprobado</option>
+          <option>Sin Selección</option>
+        </select></td>
+        <td align="center" valign="top"><form id="form14" name="form14" onSubmit="search();return false;" action="">
+          <label for="select"></label>
+          <select name="select" id="select">
+            <option>Aprobado</option>
+            <option>Reprobado</option>
+            <option>Sin Selección</option>
+          </select>
+        </form></td>
+        <td align="center" valign="top"><select name="select5" id="select5">
+          <option>Aprobado</option>
+          <option>Reprobado</option>
+          <option>Sin Selección</option>
+        </select></td>
+        <td align="center" valign="top"><select name="select6" id="select6">
+          <option>Aprobado</option>
+          <option>Reprobado</option>
+          <option>Sin Selección</option>
+        </select></td>
+        <td align="center" valign="top"><select name="select7" id="select7">
+          <option>Aprobado</option>
+          <option>Reprobado</option>
+          <option>Sin Selección</option>
+        </select></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="809" colspan="2" align="center"><img src="{{ url_for('static',filename='img/reporte.png') }}" width="300" height="250" /></td>
+  </tr>
+  <tr>
+    <td height="29" colspan="3" align="center" valign="middle"><pre>Grupo 03 Ingeniería de Software&copy; 2022</pre></td>
+  </tr>
+</table>
+</body>
+</html>

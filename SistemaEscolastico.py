@@ -22,8 +22,7 @@ def index():
         return render_template("menu_administrador.html")
     
     if session.get("usertype") == 'docente':
-        flash("Perdon DOCENTE, pronto lo arreglaremos")
-        return redirect(url_for('error404'))
+        return render_template("menu_docente.html")
     
     if session.get("usertype") == 'estudiante':
         flash("Perdon ESTUDIANTE, pronto lo arreglaremos")
@@ -82,6 +81,17 @@ def registrar_asignatura_paralelo():
 @admin_requerido
 def registrar_matricula():
     return render_template("registro-matricula.html")
+
+# Funciones de Estudiante
+@app.route("/registrar-notas")
+@docente_requerido
+def registrar_notas():
+    return render_template("registro-notas.html")
+
+@app.route("/reporte-notas")
+@docente_requerido
+def reporte_notas():
+    return render_template("reporte-notas.html")
 
 # Logout
 @app.route("/logout")

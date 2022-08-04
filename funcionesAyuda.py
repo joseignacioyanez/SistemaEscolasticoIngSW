@@ -21,7 +21,7 @@ def admin_requerido(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if session.get("usertype") != 'administrador':
-            return redirect("/login")
+            return redirect("/logout")
         return f(*args, **kwargs)
     return decorated_function
 
@@ -29,7 +29,7 @@ def docente_requerido(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if session.get("usertype") != 'docente':
-            return redirect("/login")
+            return redirect("/logout")
         return f(*args, **kwargs)
     return decorated_function
 
@@ -37,6 +37,6 @@ def estudiante_requerido(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if session.get("usertype") != 'estudiante':
-            return redirect("/login")
+            return redirect("/logout")
         return f(*args, **kwargs)
     return decorated_function

@@ -2,3 +2,4 @@ Flask
 gunicorn
 bcrypt
 sqlite3
+flask_session

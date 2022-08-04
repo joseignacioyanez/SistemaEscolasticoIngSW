@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro de Notas</title>
+<style type="text/css">
+body,td,th {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36px;
+	color: #000;
+	font-weight: bold;
+}
+body {
+	background-image: url();
+	background-repeat: repeat;
+	background-color: #FFC;
+}
+</style>
+</head>
+
+<body>
+<table width="1024" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="550" height="99" align="center" ><img src="{{ url_for('static',filename='img/icono.png') }}" width="192" height="184" /></td>
+    <td height="99" colspan="2" align="center" valign="middle"><h3><strong>Unidad Educativa Particular &quot;Marqués de Selva Alegre&quot;</strong>     </h3><label for="textfield6"></label>      </td>
+  </tr>
+  <tr>
+    <td height="135" colspan="2" align="center" valign="top"><a href="/"><img src="{{ url_for('static',filename='img/flecha-izquierda.png') }}" width="100" height="90" /></a></td>
+    <td width="724" rowspan="2" align="center"><table width="512" height="418" border="1">
+      <tr>
+        <td height="44" colspan="4" align="center" valign="middle"><h5>Registro de Notas</h5></td>
+        </tr>
+      <tr>
+        <td height="35" colspan="2" align="center" valign="middle"><h6>Estudiante</h6></td>
+        <td colspan="2" align="center" valign="middle"><form id="form1" name="form1" onSubmit="search();return false;" action="">
+          <label for="textfield2"></label>
+          <input name="textfield2" type="text" id="textfield2" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td height="39" colspan="2" align="center" valign="middle"><h6>Nivel</h6></td>
+        <td colspan="2" align="center" valign="middle"><form id="form2" name="form2" onSubmit="search();return false;" action="">
+          <label for="textfield"></label>
+          <input name="textfield" type="text" id="textfield" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td height="35" colspan="2" align="center" valign="middle"><h6>Paralelo</h6></td>
+        <td colspan="2" align="center" valign="middle"><form id="form3" name="form3" onSubmit="search();return false;" action="">
+          <label for="textfield3"></label>
+          <input name="textfield3" type="text" id="textfield3" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td height="35" colspan="2" align="center" valign="middle"><h6>Asignatura</h6></td>
+        <td colspan="2" align="center" valign="middle"><form id="form4" name="form4" onSubmit="search();return false;" action="">
+          <label for="textfield4"></label>
+          <input name="textfield4" type="text" id="textfield4" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td height="35" colspan="2" align="center" valign="middle"><h6>Docente</h6></td>
+        <td colspan="2" align="center" valign="middle"><form id="form5" name="form5" onSubmit="search();return false;" action="">
+          <label for="textfield5"></label>
+          <input name="textfield5" type="text" id="textfield5" size="50" />
+        </form></td>
+        </tr>
+      <tr>
+        <td height="35" colspan="4" align="center" valign="middle"><h6>Notas</h6></td>
+        </tr>
+      <tr>
+        <td width="400" height="20" align="left" valign="middle" nowrap="nowrap"><h6>Act_En_Clases 20/20</h6></td>
+        <td width="97" height="50" align="left" valign="middle" nowrap="nowrap"><h6>Deberes 20/20</h6></td>
+        <td width="129" height="50" align="left" valign="middle" nowrap="nowrap"><h6>Examen 20/20</h6></td>
+        <td width="66" height="50" align="left" valign="middle" nowrap="nowrap"><h6>Total 20/20</h6></td>
+        </tr>
+      <tr>
+        <td height="35" align="center" valign="middle"><form id="form6" name="form6" onSubmit="search();return false;" action="">
+          <label for="textfield3"></label>
+          <input name="textfield6" type="text" id="textfield3" size="30" />
+        </form></td>
+        <td align="center" valign="middle"><form id="form7" name="form7" onSubmit="search();return false;" action="">
+          <label for="textfield4"></label>
+          <input name="textfield7" type="text" id="textfield4" size="30" />
+        </form></td>
+        <td align="center" valign="middle"><form id="form8" name="form8" onSubmit="search();return false;" action="">
+          <label for="textfield5"></label>
+          <input name="textfield8" type="text" id="textfield5" size="30" />
+        </form></td>
+        <td align="center" valign="middle"><form id="form9" name="form9" onSubmit="search();return false;" action="">
+          <label for="textfield7"></label>
+          <input name="textfield9" type="text" id="textfield7" size="30" />
+        </form></td>
+      </tr>
+      <tr>
+        <td height="50" colspan="2" align="center" valign="middle"><form id="form10" name="form10" onSubmit="search();return false;" action="">
+          <input type="submit" name="button" id="button" value="Enviar" />
+        </form></td>
+        <td colspan="2" align="center" valign="middle"><form id="form11" name="form11" onSubmit="search();return false;" action="">
+          <input type="reset" name="button2" id="button2" value="Cancelar" />
+        </form></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="446" colspan="2" align="center"><img src="{{ url_for('static',filename='img/estudiante2.png') }}" width="300" height="250" /></td>
+  </tr>
+  <tr>
+    <td height="424" colspan="3" align="center" valign="middle"><pre>Grupo 03 Ingeniería de Software&copy; 2022</pre></td>
+  </tr>
+</table>
+</body>
+</html>

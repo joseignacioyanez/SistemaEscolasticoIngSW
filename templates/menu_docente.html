@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Administrador Docente</title>
+<style type="text/css">
+body,td,th {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 36px;
+	color: #000;
+	font-weight: bold;
+}
+body {
+	background-repeat: repeat;
+	background-color: #FFC;
+}
+</style>
+</head>
+
+<body>
+<table width="1024" border="1" align="center">
+  <tr>
+    <td width="183" height="99"><img src="{{ url_for('static',filename='img/icono.png') }}" width="192" height="184" /></td>
+    <td height="99" colspan="2" align="center" valign="middle"><h3><strong>Unidad Educativa Particular &quot;Marqués de Selva Alegre&quot;</strong>     </h3><label for="textfield6"></label>      </td>
+    <td>	<form action="/logout">
+      <button type="submit">Logout</button>
+    </form></td>
+  </tr>
+  <tr>
+    <td height="286" colspan="2" align="center"><a href="/registrar-notas" target="_self"><img src="{{ url_for('static',filename='img/registro-notas.png') }}" width="300" height="300" /></a>
+      <form action="" method="post" name="form1" target="_self" id="form1">
+        <h6> <a href="/registrar-notas" target="_self">REGISTRO DE NOTAS </a></h6>
+    </form></td>
+    <td width="487" align="center"><a href="/reporte-notas" target="_self"><img src="{{ url_for('static',filename='img/reporte-notas.png') }}" width="300" height="300" border="0" /></a>
+      <form id="form2" name="form2" method="post" action="">
+        <h6> <a href="/reporte-notas" target="_self">REPORTE DE NOTAS</a> </h6>
+    </form></td>
+  </tr>
+  <tr>
+    <td height="29" colspan="3" align="center" valign="middle"><pre>Grupo 03 Ingeniería de Software&copy; 2022</pre></td>
+  </tr>
+</table>
+</body>
+</html>
