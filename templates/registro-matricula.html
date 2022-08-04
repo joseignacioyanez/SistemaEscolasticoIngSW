@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro Matrícula</title>
+<style type="text/css">
+#apDiv1 {	position: absolute;
+	left: 27px;
+	top: 10px;
+	width: 1207px;
+	height: 93px;
+	z-index: 1;
+	background-color: #C9D27D;
+	color: #FFF;
+}
+#apDiv3 {	position: absolute;
+	left: 399px;
+	top: 109px;
+	width: 536px;
+	height: 35px;
+	z-index: 3;
+}
+#apDiv2 {
+	position: absolute;
+	left: 156px;
+	top: 238px;
+	width: 354px;
+	height: 283px;
+	z-index: 4;
+	background-color: #C9D27D;
+}
+#apDiv4 {
+	position: absolute;
+	left: 654px;
+	top: 220px;
+	width: 456px;
+	height: 348px;
+	z-index: 5;
+}
+#apDiv11 {	position: absolute;
+	left: 43px;
+	top: 4px;
+	width: 114px;
+	height: 98px;
+	z-index: 8;
+}
+</style>
+</head>
+
+<body bgcolor="#E2E2C7">
+<div id="apDiv11"><img src="{{ url_for('static',filename='img/icono.png') }}" alt="icono" width="105" height="103"  /></div>
+<div id="apDiv1">
+  <h1 align="center">Unidad Educativa Particular &quot;Marqués de Selva Alegre&quot;</h1>
+</div>
+<div id="apDiv3">
+  <div align="center">
+    <h2>Registro de Matrícula</h2>
+    <form action="/logout">
+      <button type="submit">Logout</button>
+    </form>
+  </div>
+</div>
+<div id="apDiv2"><img src="{{ url_for('static',filename='img/matricula.png') }}" width="353" height="289"  /></div>
+<div id="apDiv4">
+  <form id="form1" name="form1" onSubmit="search();return false;" action="">
+    <table width="450" height="306" border="1">
+      <tr>
+        <th width="218" bgcolor="#C9D27D" scope="row"><label for="NomEsdnt">Nombre Estudiante</label></th>
+        <td width="216"><input name="NomEsdnt" type="text" id="NomEsdnt" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="ApellEsdnt">Apellido Estudiante</label></th>
+        <td><input name="ApellEsdnt" type="text" id="ApellEsdnt" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Cedula">Cédula</label></th>
+        <td><input name="Cedula" type="text" id="Cedula" maxlength="10" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Correo">Correo</label></th>
+        <td><input name="Correo" type="text" id="Correo" maxlength="30" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Asignatura">Asignatura</label></th>
+        <td><select name="Asignatura" id="Asignatura">
+          <option>Educación Cultural y Artística</option>
+          <option>Educación Física</option>
+          <option>Ciencias Naturales</option>
+          <option>Ciencias Sociales</option>
+          <option>Lengua y Literatura</option>
+          <option>Matemática</option>
+          <option>Lengua Extranjera</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Paralelo">Paralelo</label></th>
+        <td><select name="Paralelo" id="Paralelo">
+          <option>Octavo</option>
+          <option>Noveno</option>
+          <option>Decimo</option>
+          <option>1ro de Bachillerato</option>
+          <option>2do de Bachillerato</option>
+          <option>3ro de Bachillerato</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Curso">Curso</label></th>
+        <td><select name="Curso" id="Curso">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>F</option>
+          <option>G</option>
+          <option>H</option>
+          <option>I</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th scope="row"><input type="submit" name="Guardar" id="Guardar" value="Guardar" /></th>
+        <td><div align="center">
+          <input type="reset" name="Vaciar" id="Vaciar" value="Vaciar Campos" />
+        </div></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>

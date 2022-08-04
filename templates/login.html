@@ -16,15 +16,7 @@
     </head>
     
     <body>
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <ul class=flashes>
-                {% for message in messages %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-                </ul>
-            {% endif %}
-        {% endwith %}
+
         
         <div id="contenedor">
             <div id="central">
@@ -35,7 +27,7 @@
                     {% if error %}
                         <p class=error><strong>Error:</strong> {{ error }}
                     {% endif %}
-                    <form id="loginform" method=post>
+                    <form id="loginform" method="post">
                         <input type="text" name="username" placeholder="Usuario" required>
                         
                         <input type="password" placeholder="Contraseña" name="contrasena" required>

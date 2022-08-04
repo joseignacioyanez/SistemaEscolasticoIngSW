@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro al Docente</title>
+<style type="text/css">
+#apDiv1 {	position: absolute;
+	left: 27px;
+	top: 10px;
+	width: 1207px;
+	height: 93px;
+	z-index: 1;
+	background-color: #C9D27D;
+}
+#apDiv3 {
+	position: absolute;
+	left: 426px;
+	top: 111px;
+	width: 454px;
+	height: 35px;
+	z-index: 3;
+}
+#apDiv2 {
+	position: absolute;
+	left: 123px;
+	top: 284px;
+	width: 738px;
+	height: 336px;
+	z-index: 4;
+}
+#apDiv4 {
+	position: absolute;
+	left: 677px;
+	top: 186px;
+	width: 397px;
+	height: 393px;
+	z-index: 4;
+}
+#apDiv5 {
+	position: absolute;
+	left: 211px;
+	top: 193px;
+	width: 312px;
+	height: 305px;
+	z-index: 5;
+	background-color: #C9D27D;
+}
+#apDiv1 h1 {
+	color: #FFF;
+}
+#apDiv11 {	position: absolute;
+	left: 43px;
+	top: 4px;
+	width: 114px;
+	height: 98px;
+	z-index: 8;
+}
+</style>
+</head>
+
+<body bgcolor="#E2E2C7">
+<div id="apDiv11"><img src="{{ url_for('static',filename='img/icono.png') }}" alt="icono" width="105" height="103" /></div>
+<div id="apDiv1">
+  <h1 align="center">Unidad Educativa Particular &quot;Marqués de Selva Alegre&quot;</h1>
+</div>
+<div id="apDiv3">
+  <div align="center">
+    <h2>Registro de Docentes</h2>
+    <form action="/logout">
+      <button type="submit">Logout</button>
+    </form>
+  </div>
+</div>
+<div id="apDiv4">
+  <form id="form1" name="form1" onSubmit="search();return false;" action="">
+    <table width="392" height="315" border="1">
+      <tr>
+        <th width="192" bgcolor="#C9D27D" scope="row"><label for="Nombre">Nombres</label></th>
+        <td width="234"><input name="Nombre" type="text" id="Nombre" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Apellido">Apellidos</label></th>
+        <td><input name="Apellido" type="text" id="Apellido" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Genero">Género</label></th>
+        <td><label for="Genero"></label>
+          <select name="Genero" id="Genero">
+            <option selected="selected">Masculino</option>
+            <option>Femenino</option>
+            <option>Indefinido</option>
+        </select></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Tel">Teléfono</label></th>
+        <td><input name="Tel" type="text" id="Tel" maxlength="10" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Dir">Dirección</label></th>
+        <td><input name="Dir" type="text" id="Dir" maxlength="30" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Pais">País</label></th>
+        <td><input name="Pais" type="text" id="Pais" maxlength="10" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Correo">Correo</label></th>
+        <td><input name="Correo" type="text" id="Correo" maxlength="30" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Usuario">Usuario</label></th>
+        <td><input name="Usuario" type="text" id="Usuario" maxlength="15" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#C9D27D" scope="row"><label for="Contrasena">Contraseña</label></th>
+        <td><input name="Contrasena" type="password" id="Contrasena" maxlength="10" /></td>
+      </tr>
+      <tr>
+        <th scope="row"><input type="submit" name="Generar" id="Generar" value="Guardar" /></th>
+        <td><div align="center">
+          <input type="reset" name="Vaciar" id="Vaciar" value="Vaciar campos" />
+        </div></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<div id="apDiv5"><img src="{{ url_for('static',filename='img/docente.png') }}" width="311" height="303"/></div>
+</body>
+</html>

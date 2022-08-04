@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Opciones de Administrador</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 27px;
+	top: 10px;
+	width: 1207px;
+	height: 93px;
+	z-index: 1;
+	background-color: #C9D27D;
+}
+#apDiv1 h1 {
+	color: #FFF;
+}
+#apDiv2 {
+	position: absolute;
+	left: 824px;
+	top: 170px;
+	width: 240px;
+	height: 224px;
+	z-index: 2;
+	background-color: #C9D27D;
+}
+#apDiv3 {
+	position: absolute;
+	left: 440px;
+	top: 108px;
+	width: 454px;
+	height: 35px;
+	z-index: 3;
+}
+#apDiv4 {
+	position: absolute;
+	left: 230px;
+	top: 168px;
+	width: 259px;
+	height: 223px;
+	z-index: 2;
+	background-color: #C9D27D;
+}
+#apDiv5 {
+	position: absolute;
+	left: 252px;
+	top: 424px;
+	width: 217px;
+	height: 214px;
+	z-index: 2;
+	background-color: #C9D27D;
+}
+#apDiv6 {
+	position: absolute;
+	left: 846px;
+	top: 428px;
+	width: 205px;
+	height: 210px;
+	z-index: 2;
+	background-color: #C9D27D;
+}
+#apDiv7 {
+	position: absolute;
+	left: 228px;
+	top: 391px;
+	width: 263px;
+	height: 21px;
+	z-index: 4;
+	background-color: #99CC66;
+}
+#apDiv8 {
+	position: absolute;
+	left: 824px;
+	top: 394px;
+	width: 240px;
+	height: 26px;
+	z-index: 5;
+	background-color: #99CC66;
+}
+#apDiv9 {
+	position: absolute;
+	left: 186px;
+	top: 638px;
+	width: 353px;
+	height: 25px;
+	z-index: 6;
+	background-color: #99CC66;
+}
+#apDiv10 {
+	position: absolute;
+	left: 834px;
+	top: 638px;
+	width: 231px;
+	height: 26px;
+	z-index: 7;
+	background-color: #99CC66;
+}
+#apDiv11 {
+	position: absolute;
+	left: 43px;
+	top: 4px;
+	width: 114px;
+	height: 98px;
+	z-index: 8;
+}
+</style>
+</head>
+
+<body bgcolor="#E2E2C7">
+<div id="apDiv1">
+  <h1 align="center">Unidad Educativa Particular &quot;Marqués de Selva Alegre&quot;</h1>
+</div>
+
+<div id="apDiv2"><a href="/registrar-estudiante" target="_self"><img src="{{ url_for('static',filename='img/registro_estudiante.png') }}" width="238" height="214" align="middle" /></a></div>
+<div id="apDiv3">
+  <div align="center">
+    <h2>Opciones de Administrador</h2>
+	<form action="/logout">
+		<button type="submit">Logout</button>
+	</form>
+  </div>
+</div>
+<div id="apDiv4"><a href="/registrar-docente" target="_self"><img src="{{ url_for('static',filename='img/registro_docente.png') }}" width="257" height="220" align="middle" /></a></div>
+<div id="apDiv5"><a href="/registrar-asignatura-paralelo" target="_self"><img src="{{ url_for('static',filename='img/registro_asignaturas.png') }}" width="213" height="204"  /></a></div>
+<div id="apDiv6"><a href="/registrar-matricula" target="_self"><img src="{{ url_for('static',filename='img/registro_matricula.png') }}" width="204" height="200"/></a></div>
+<div id="apDiv7">
+  <div align="center">Registro de Docente</div>
+</div>
+<div id="apDiv8">
+  <div align="center">Registro de Estudiante</div>
+</div>
+<div id="apDiv9">
+  <div align="center">Registro de Asignatura y Paralelos</div>
+</div>
+<div id="apDiv10">
+  <div align="center">Registro de Matrículas</div>
+</div>
+<div id="apDiv11"><img src="{{ url_for('static',filename='img/icono.png') }}" width="105" height="103"  /></div>
+</body>
+</html>
